@@ -19,8 +19,8 @@ def measure_time(func):
 
 @measure_time
 async def ping(ip):
-    # await asyncio.sleep(random.randint(1, 10), loop=loop)
-    res = await prime.calc_primes(random.randint(5, 22222))
+    await asyncio.sleep(random.randint(1, 10), loop=loop)
+    # res = await prime.calc_primes(random.randint(5, 22222))
     return False
 
 async def print_ping(ip):
